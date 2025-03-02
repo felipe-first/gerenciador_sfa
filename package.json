@@ -1,0 +1,26 @@
+{
+  "name": "gerenciador_sfa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+	"start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipe-first/gerenciador_sfa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipe-first/gerenciador_sfa/issues"
+  },
+  "homepage": "https://github.com/felipe-first/gerenciador_sfa#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.11.0"
+  }
+}
