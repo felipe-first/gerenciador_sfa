@@ -4,6 +4,13 @@ const dotenv = require('dotenv');
 const animeRoutes = require('./routes/animeRoutes');
 
 dotenv.config();
+console.log('MONGODB_URI:', process.env.MONGODB_URI); // Debug
+
+if (!process.env.MONGODB_URI) {
+  console.error('Erro: MONGODB_URI não definida no .env');
+  process.exit(1);
+}
+
 const app = express();
 
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
